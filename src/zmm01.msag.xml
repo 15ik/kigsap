@@ -1,0 +1,901 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZMM01</ARBGB>
+    <MASTERLANG>3</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>&amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>&amp; &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>&amp; &amp; &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>공통코드를 확인하세요.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>&amp;1 데이터가 존재하지 않습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>선택된 데이타가 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>1 개의 라인을 선택하십시오.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>&amp; 건을 진행하시겠습니까?</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>전체 &amp; 건이 저장되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>전체 &amp; 건의 데이타 저장시 에러가 발생하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>&amp; 건의 데이타가 조회되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>진행하시겠습니까?</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>DB Update System Error !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>◈ 대상 &amp; 건 / 성공 &amp; 건 / 오류 &amp; 건 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>&amp; (&amp;) 데이터가 존재하지 않습니다.( &amp; ).</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>016</MSGNR>
+     <TEXT>&amp; 을(를) 입력하세요. ( &amp; ).</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>017</MSGNR>
+     <TEXT>&amp; 을(를) 입력하세요.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>018</MSGNR>
+     <TEXT>&amp;1 이(가) 사용 중 입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>단가가 미확정 상태입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>&amp; 창고는 WMS/3PL에서 처리하세요.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>처리 가능한 데이타가 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>&amp; (&amp;) 데이터가 존재하지 않습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>&amp; 이(가) 포함 되어 있습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>&amp; 선택 시 처리 가능 합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>&amp;1 이(가) 없는 데이타가 포함 되어 있습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>등록되지 않는 [ &amp;1 ] 입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>027</MSGNR>
+     <TEXT>&amp;1 건을 삭제하시겠습니까?</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>028</MSGNR>
+     <TEXT>&amp;1 필수값 누락 이나 오류사항이 있습니다. &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>029</MSGNR>
+     <TEXT>[ &amp;1 ] 입력된 데이타가 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>030</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4 을 점검하세요.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>031</MSGNR>
+     <TEXT>&amp;1 이(가) 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>032</MSGNR>
+     <TEXT>취소 하시겠습니까?</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>033</MSGNR>
+     <TEXT>&amp;이 존재하지 않습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>034</MSGNR>
+     <TEXT>&amp;가 존재하지 않습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>035</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4 를(을) 확인하세요.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>036</MSGNR>
+     <TEXT>&amp;1 삭제가 불가 합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>037</MSGNR>
+     <TEXT>&amp;1 건의 에러가 존재 합니다. 에러 메세지를 확인하세요!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>038</MSGNR>
+     <TEXT>전체 &amp;1 건이 &amp;2 되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>039</MSGNR>
+     <TEXT>중복 데이타가 존재합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>040</MSGNR>
+     <TEXT>[ &amp;1 ] &amp;2 를 확인하세요!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>041</MSGNR>
+     <TEXT>[ &amp;1 ] 권한이 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>042</MSGNR>
+     <TEXT>&amp;1 &amp;2 수량이 존재하지 않습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>043</MSGNR>
+     <TEXT>&amp;1 &amp;2 가(이) 존재합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>044</MSGNR>
+     <TEXT>&amp;1건이 성공적으로 전송되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>045</MSGNR>
+     <TEXT>&amp;1건이 성공적으로 처리되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>046</MSGNR>
+     <TEXT>프로그램이 Background에서 실행 중 입니다 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>047</MSGNR>
+     <TEXT>경작인 &amp;1 가 등록되지 않았습니다 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>048</MSGNR>
+     <TEXT>경작인 &amp;1의 지급요청 필수 필드에 값이 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>049</MSGNR>
+     <TEXT>서로 다른 &amp;1 을(를) 선택하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>050</MSGNR>
+     <TEXT>&amp;1(&amp;2) 은 &amp;3(&amp;4) 보다 과거입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>051</MSGNR>
+     <TEXT>오류 건만 재처리 가능합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>052</MSGNR>
+     <TEXT>해당 납품플랜트는 WMS에서 재처리 필요합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>053</MSGNR>
+     <TEXT>&amp;1 &amp;2 오류가 발생하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>054</MSGNR>
+     <TEXT>에러:&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>055</MSGNR>
+     <TEXT>&amp;1 &amp;2 실패하였습니다. 메시지를 확인하세요.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>056</MSGNR>
+     <TEXT>취소할 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>057</MSGNR>
+     <TEXT>재고이전 문서부터 취소하세요 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>058</MSGNR>
+     <TEXT>선급금 반제문서부터 취소 하세요 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>059</MSGNR>
+     <TEXT>송장문서부터 취소 하세요 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>060</MSGNR>
+     <TEXT>입고문서부터 취소 하세요 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>061</MSGNR>
+     <TEXT>구매문서 취소가 처리 되었습니다 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>062</MSGNR>
+     <TEXT>재고이전취소문서 &amp;1가 처리 되었습니다 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>063</MSGNR>
+     <TEXT>선급반제취소문서 &amp;1가 처리 되었습니다 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>064</MSGNR>
+     <TEXT>송장취소문서 &amp;1가 처리 되었습니다 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>065</MSGNR>
+     <TEXT>입고취소문서 &amp;1가 처리 되었습니다 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>066</MSGNR>
+     <TEXT>결재상신 할 수 없는 데이터가 존재합니다 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>067</MSGNR>
+     <TEXT>Interface 공통 정보가 누락되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>068</MSGNR>
+     <TEXT>필수 입력 정보가 누락되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>069</MSGNR>
+     <TEXT>라인을 선택해 주십시오</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>070</MSGNR>
+     <TEXT>조회된 데이타가 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>071</MSGNR>
+     <TEXT>전체 &amp; 건이 삭제되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>072</MSGNR>
+     <TEXT>전체 &amp; 건의 데이타 삭제시 에러가 발생하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>073</MSGNR>
+     <TEXT>입고문서 &amp;1가 처리 되었습니다 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>074</MSGNR>
+     <TEXT>삭제 되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>075</MSGNR>
+     <TEXT>입고 수량을 입력하세요 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>076</MSGNR>
+     <TEXT>평가 유형을 입력하세요 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>077</MSGNR>
+     <TEXT>배치 속성을 입력하세요 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>078</MSGNR>
+     <TEXT>저장위치를 입력하세요 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>079</MSGNR>
+     <TEXT>변경된 정보가 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>080</MSGNR>
+     <TEXT>&amp;1 가용금액을 초과하였습니다.(최대 &amp;1:&amp;2)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>081</MSGNR>
+     <TEXT>&amp;1 을(를) 초과하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>082</MSGNR>
+     <TEXT>Dump 가 발생되었습니다! ( &amp;1 )</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>083</MSGNR>
+     <TEXT>&amp;1 자재가 플랜트 &amp;2에 존재하지 않습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>084</MSGNR>
+     <TEXT>&amp;1 자재가 플랜트 &amp;2 에 평가유형이 존재하지 않습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>085</MSGNR>
+     <TEXT>&amp;1 자재가 플랜트 &amp;2, 저장위치 &amp;3 에 존재하지 않습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>086</MSGNR>
+     <TEXT>자재 &amp;1, 플랜트 &amp;2, 평가유형 &amp;3에 대한 저장위치 &amp;4가(이) 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>087</MSGNR>
+     <TEXT>자재 &amp;1, 플랜트 &amp;2, 배치 &amp;3에 대한 저장위치 &amp;4가(이) 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>088</MSGNR>
+     <TEXT>업로드 파일 을(를) 입력하세요.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>089</MSGNR>
+     <TEXT>오더번호: &amp;1 에 미결선급( &amp;2 원) 존재합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>090</MSGNR>
+     <TEXT>&amp;1 건의 에러가 존재 합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>091</MSGNR>
+     <TEXT>유효한 값을 입력하세요! [ &amp;1 ]</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>092</MSGNR>
+     <TEXT>&amp;1 은 &amp;2 를 사용할 수 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>093</MSGNR>
+     <TEXT>자재문서 &amp; 가 생성되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>094</MSGNR>
+     <TEXT>자재문서 &amp; 로 취소되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>095</MSGNR>
+     <TEXT>구매요청 유형 &apos;MRO&apos; 는 수작업 생성 및 변경이 불가능합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>096</MSGNR>
+     <TEXT>품목정보에 서로 상이한 플랜트를 입력하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>097</MSGNR>
+     <TEXT>송장문서 &amp;1/&amp;2 가 생성 되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>098</MSGNR>
+     <TEXT>&amp;1 을(를) 초과하였습니다.( &amp;2 )</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>099</MSGNR>
+     <TEXT>자재 &amp;1 :가용성 점검, 재고수량이 부족합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>100</MSGNR>
+     <TEXT>구매오더유형 &amp;1 은 수작업 생성/변경이 불가능합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>101</MSGNR>
+     <TEXT>&amp;1을(를) 확인하세요.(&amp;2)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>102</MSGNR>
+     <TEXT>입력된 이름에 해당하는 사번이 다수가 존재합니다. 정확한 사번을 입력하세요.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>103</MSGNR>
+     <TEXT>&amp;1 &amp;2 는 사용 할 수 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>104</MSGNR>
+     <TEXT>위험물 발주제한품목입니다.( &amp;1 )</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>105</MSGNR>
+     <TEXT>◈ 대상 &amp; 건 / 변경 &amp; 건 / 삭제 &amp; 건 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>106</MSGNR>
+     <TEXT>구매정보레코드에 생산버젼이 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>107</MSGNR>
+     <TEXT>구성품 &amp;1 의 재고가 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>108</MSGNR>
+     <TEXT>&amp;1 은 현재일보다 미래입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>109</MSGNR>
+     <TEXT>미소취소문서 &amp;1가 처리 되었습니다 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>110</MSGNR>
+     <TEXT>미수전표 먼저 취소 하세요 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>111</MSGNR>
+     <TEXT>수출연도 &amp;1에 대해 Version &amp;2로 이미 집계된 비중신고 Data가 존재합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>112</MSGNR>
+     <TEXT>수출연도 &amp;1 의 비중신고 Data가 집계되었습니다. ( &amp;2 건)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>113</MSGNR>
+     <TEXT>&amp;1 작업을 취소하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>114</MSGNR>
+     <TEXT>반출확정 (STO/OutB생성) 중 &amp;1건의 에러가 발생하였습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>115</MSGNR>
+     <TEXT>수출월 &amp;1에 대해 이미 집계된 비중신고 Data가 존재합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>116</MSGNR>
+     <TEXT>수출월 &amp;1 의 비중신고 Data가 집계되었습니다. ( &amp;2 건)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>117</MSGNR>
+     <TEXT>품목금액과 분할금액 차이가 발생합니다.(&amp;1 - &amp;2)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>118</MSGNR>
+     <TEXT>&amp;1(&amp;2) 와 &amp;3(&amp;4) 와 서로 다릅니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>119</MSGNR>
+     <TEXT>사용자 &amp;1가(이) &amp;2 &amp;3을(를) 이미 처리하고 있습니다.(&amp;4)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>120</MSGNR>
+     <TEXT>No found layout available for F4.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>121</MSGNR>
+     <TEXT>서로 다른 구매요청 문서유형을 참조하였습니다.(자재 &amp;1 참조 구매요청 &amp;2 문서유형 &amp;3)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>122</MSGNR>
+     <TEXT>전체 &amp; 건중 &amp;건 맵핑 성공 &amp;건 맵핑오류가 발생하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>123</MSGNR>
+     <TEXT>전체 &amp; 건이 맵핑완료 하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>124</MSGNR>
+     <TEXT>회사코드 &amp;1 에 대한 실행 권한이 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>125</MSGNR>
+     <TEXT>플랜트 &amp;1 에 대한 실행 권한이 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>126</MSGNR>
+     <TEXT>1개의 &amp;을 선택하세요.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>127</MSGNR>
+     <TEXT>MIGO 표준 기능을 사용할 수 없는 사용자입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>128</MSGNR>
+     <TEXT>송장처리자가 &amp; 아닌 건들은 대상에서 제외하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>129</MSGNR>
+     <TEXT>입력된 이동유형과 자재는 시험용담배 출고 저장위치에서만 사용 가능합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>130</MSGNR>
+     <TEXT>WMS창고가 아닌 창고를 입력하세요.(품목: &amp;1 )</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>131</MSGNR>
+     <TEXT>반품환불 구매오더를 제외하세요.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>132</MSGNR>
+     <TEXT>&amp;1 건의 중복데이터가 존재합니다. &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>133</MSGNR>
+     <TEXT>사용자&amp;1가 &amp;2처리중입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>134</MSGNR>
+     <TEXT>담당부서 권한을 확인바랍니다. &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>135</MSGNR>
+     <TEXT>담당자 권한을 확인바랍니다. &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>136</MSGNR>
+     <TEXT>자재 &amp;1 : 가용수량은 &amp;2 입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>137</MSGNR>
+     <TEXT>&amp;1 대상 &amp;2 건 / 성공 &amp;3 건 / 에러 &amp;4 건 </TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>138</MSGNR>
+     <TEXT>&amp;1 건의 &amp;2 가 생성되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>139</MSGNR>
+     <TEXT>&amp;1 검수부서는 &amp;2 회사코드에 존재하지 않습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>140</MSGNR>
+     <TEXT>입력된 이동유형은 시험용 담배 출고 저장위치에서 사용할수 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>141</MSGNR>
+     <TEXT>&amp;1 은 &amp;2 이하 허용할 수 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>142</MSGNR>
+     <TEXT>&amp;1 은 &amp;2 이상 이어야 합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>143</MSGNR>
+     <TEXT>&amp;1 생산오더 플랜트와 자재문서 플랜트가 다릅니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>144</MSGNR>
+     <TEXT>원 FI 전표 &amp;1 / &amp;2 의 Block 설정에 실패하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>145</MSGNR>
+     <TEXT>&amp;1 &amp;2 전기할 수 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>146</MSGNR>
+     <TEXT>역분개 문서는 참조하여 전기할 수 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM01</ARBGB>
+     <MSGNR>147</MSGNR>
+     <TEXT>검사가 완료되어 입고를 취소할 수 없습니다.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

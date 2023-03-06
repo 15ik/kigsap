@@ -1,0 +1,29 @@
+FUNCTION-POOL ZKIG_CN_0002.                 "MESSAGE-ID ..
+
+CONSTANTS: GC_BUKRS_1101 TYPE RBKP-BUKRS VALUE '1101',
+           GC_BUKRS_2101 TYPE RBKP-BUKRS VALUE '2101',
+           GC_BUKRS_3101 TYPE RBKP-BUKRS VALUE '3101',
+           GC_WAERS_KRW TYPE RBKP-WAERS VALUE 'KRW'.
+
+**> 값 단위 별 변환
+DEFINE _G_CONV_DATA_SAP_TO_EAI.
+
+  ZCL_MM_COMMON=>CONV_DATA_SAP_TO_EAI( EXPORTING IV_VALUE  = &1
+                                          IV_UNIT = &2
+                                IMPORTING EV_VALUE   = &3 ).
+
+END-OF-DEFINITION.
+**> 구조체 별 변환
+DEFINE _G_CONV_STRC_SAP_TO_EAI.
+
+  ZCL_MM_COMMON=>CONV_STRUCTURE_SAP_TO_EAI( EXPORTING IS_STRUCTURE  = &1
+                                IMPORTING ES_STRUCTURE   = &2 ).
+
+END-OF-DEFINITION.
+**> 값 단위 별 변환
+DEFINE _G_CONV_DATA_EAI_TO_SAP.
+
+  ZCL_MM_COMMON=>CONV_DATA_EAI_TO_SAP( EXPORTING IV_VALUE  = &1
+                                          IV_UNIT = &2
+                                IMPORTING EV_VALUE   = &3 ).
+END-OF-DEFINITION.

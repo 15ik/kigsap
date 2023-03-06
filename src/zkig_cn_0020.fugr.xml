@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>BOM 관리 Function</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZKIG_CN_0020TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZKIG_CN_0020</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFMM_BOM_EXPL_MAT</FUNCNAME>
+     <SHORT_TEXT>BOM 정전개 함수</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_DATUV</PARAMETER>
+       <DEFAULT>SY-DATUM</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>STKO-DATUV</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_MEHRS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_ZFDLV</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_MDMPS</PARAMETER>
+       <DEFAULT>&apos;&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CSDATA-XFELD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_STPST</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>STPOX-STUFE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRET2</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_MATNR</PARAMETER>
+       <DBSTRUCT>ZSMM00001</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_STB</PARAMETER>
+       <DBSTRUCT>ZSMM_STPOX</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_MATCAT</PARAMETER>
+       <DBSTRUCT>CSCMAT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_TOPMAT</PARAMETER>
+       <DBSTRUCT>CSCMAT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_DATUV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>효력 시작일</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_MEHRS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>단일 문자 플래그</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_ZFDLV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>단일 문자 플래그</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_MDMPS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>체크박스</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_STPST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>레벨(다중 레벨 BOM 전개)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>리턴 매개변수</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>[MM] TOP materials</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_STB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>[MM] BOM Items (Extended for List Displays)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_MATCAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BOM 전개: 자재</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_TOPMAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BOM 전개: 자재</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

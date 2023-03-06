@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZMM00</ARBGB>
+    <MASTERLANG>3</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp; &amp; &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>&amp; 을(를) 확인 하십시오.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>데이타가 성공적으로 저장되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>데이타 저장이 실패했습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>데이타가 조회되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>라인을 선택해 주십시오.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>변경된 데이타가 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>저장시 에러가 발생했습니다(에러를 확인하세요).</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>데이타가 중복되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>&amp;1 은(는) 필수입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Excel File을 성공적으로 Upload 완료 했습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>데이타가 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>데이타를 성공적으로 이관하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>성공적으로 상신하였습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>상신중 에러가 발생하였습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>데이터가 성공적으로 삭제되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>016</MSGNR>
+     <TEXT>I/F 중 에러가 발생했습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>017</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>019</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>020</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>022</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>024</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>025</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>026</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>027</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>028</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>ZMM00</ARBGB>
+     <MSGNR>029</MSGNR>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

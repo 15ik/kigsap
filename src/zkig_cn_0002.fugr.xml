@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>송장생성 FC</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZKIG_CN_0002TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZKIG_CN_0002</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFMM_INCOMINGINVOICE_CREATE</FUNCNAME>
+     <SHORT_TEXT>송장생성 FC</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_HEADERDATA</PARAMETER>
+       <TYP>ZSMM_INCINV_CREATE_HEADER</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_INVOICEDOCNUMBER</PARAMETER>
+       <TYP>ZSMM_INCINV_CREATE_RESULT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_TAXDATA</PARAMETER>
+       <DBSTRUCT>ZSMM_INCINV_CREATE_TAX</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_VENDORITEMSPLITDATA</PARAMETER>
+       <TYPES>O</TYPES>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZSMM_INCINV_CREATE_VENDORSPLIT</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_ITEMDATA</PARAMETER>
+       <DBSTRUCT>ZSMM_INCINV_CREATE_ITEM</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_GLACCOUNTDATA</PARAMETER>
+       <TYPES>O</TYPES>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZSMM_INCINV_CREATE_GL_ACCOUNT</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_MATERIALDATA</PARAMETER>
+       <TYPES>O</TYPES>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZSMM_INCINV_CREATE_MATERIAL</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_ACCOUNTINGDATA</PARAMETER>
+       <DBSTRUCT>ZSMM_INCINV_CREATE_ACCOUNT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_HEADERDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>송장헤더 데이터 전송구조</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_INVOICEDOCNUMBER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>송장 생성 결과</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_TAXDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>세금데이터에 대한 전송구조(생성)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_VENDORITEMSPLITDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>수령 송장 공급업체 분할(생성)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_ITEMDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>송장품목데이터에 대한 전송구조(생성)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_GLACCOUNTDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>수령 송장 G/L 계정 전기(생성)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_MATERIALDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>수령 송장 자재 전기(생성)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_ACCOUNTINGDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>송장문서 Multi Account Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>리턴 매개변수</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

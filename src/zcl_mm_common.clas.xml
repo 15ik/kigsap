@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_MM_COMMON</CLSNAME>
+    <LANGU>3</LANGU>
+    <DESCRIPT>MM Common</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PGM_PARAMETER</CMPNAME>
+     <SCONAME>ET_SELINFO</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>Table type for general selection</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PGM_PARAMETER</CMPNAME>
+     <SCONAME>ET_SELTAB</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>Table type for general selection</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PGM_PARAMETER</CMPNAME>
+     <SCONAME>ET_SELTEXT</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>프로그램의 텍스트 풀 텍스트가 있는 테이블</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PGM_PARAMETER</CMPNAME>
+     <SCONAME>IV_REPID</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>ABAP 프로그램 이름</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PGM_PARAMETER</CMPNAME>
+     <SCONAME>RV_SUBRC</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>리턴코드에 대한 서브루틴</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

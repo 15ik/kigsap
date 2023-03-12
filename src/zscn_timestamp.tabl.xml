@@ -7,6 +7,7 @@
     <DDLANGUAGE>3</DDLANGUAGE>
     <TABCLASS>INTTAB</TABCLASS>
     <DDTEXT>Time Stamp Stru. - Common Element For Trans. Table</DDTEXT>
+    <ACTFLAG>U</ACTFLAG>
    </DD02V>
    <DD03P_TABLE>
     <DD03P>

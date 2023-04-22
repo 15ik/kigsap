@@ -1459,7 +1459,7 @@
     <item>
      <ID>S</ID>
      <KEY>P_BUKRS</KEY>
-     <ENTRY>자재코드</ENTRY>
+     <ENTRY>회사코드</ENTRY>
      <LENGTH>12</LENGTH>
     </item>
     <item>

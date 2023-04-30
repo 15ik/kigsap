@@ -5,22 +5,22 @@
 @EndUserText.label: '[재고관리]일자별 재고 현황(Timeseries)'
 
 define view ZCBMMDAYSTOCK
-with parameters
+with parameters 
 @Consumption.hidden: true
 @Environment.systemField: #SYSTEM_DATE
     p_startdate : vdm_v_start_date,
     p_enddate : vdm_v_end_date,
     p_periodtype : nsdm_period_type
 // Split Valuation 자재
-as
-select distinct  from mara as A inner join I_MaterialStockTimeSeries(P_StartDate: $parameters.p_startdate,
+as 
+select distinct  from mara as A inner join I_MaterialStockTimeSeries(P_StartDate: $parameters.p_startdate,  //  KTGA-3910 distinct 추가  2023.01.11 
                                                            P_EndDate : $parameters.p_enddate,
                                                            P_PeriodType :$parameters.p_periodtype) as B on A.matnr = B.Material
                       inner join marc as c on B.Material = c.matnr and B.Plant = c.werks
-                      inner join mbew as d on B.Material = d.matnr and B.Plant = d.bwkey and B.Batch = d.bwtar 
-                      association [1]   to t024 as t024  on $projection.ekgrp = t024.ekgrp
+                      inner join mbew as d on B.Material = d.matnr and B.Plant = d.bwkey  //  and B.Batch = d.bwtar   KTGA-3910 주석처리 2023.01.11 
+                      association [1]   to t024 as t024  on $projection.ekgrp = t024.ekgrp     
                       association [1]   to t024d as t024d  on $projection.werks = t024d.werks
-                                                            and $projection.dispo = t024d.dispo
+                                                            and $projection.dispo = t024d.dispo        
 {
   key B.CompanyCode as BUKRS,
   key B._CompanyCode.CompanyCodeName,
@@ -38,8 +38,8 @@ select distinct  from mara as A inner join I_MaterialStockTimeSeries(P_StartDate
   key B.Customer,
   key B.InventoryStockType as stocktype,
   key B.InventorySpecialStockType,
-  key B.FiscalYearVariant,
-  @Semantics.unitOfMeasure
+  key B.FiscalYearVariant,   
+  @Semantics.unitOfMeasure  
   key B.MaterialBaseUnit as MEINS,
   @Semantics.quantity.unitOfMeasure: 'MEINS'
       cast( B.MatlWrhsStkQtyInMatlBaseUnit as abap.quan( 13, 3 ))  as stockqty,
@@ -57,7 +57,7 @@ select distinct  from mara as A inner join I_MaterialStockTimeSeries(P_StartDate
       t024.eknam,
       c.dispo,
       t024d.dsnam,
-      A.matkl
+      A.matkl      
 } where c.bwtty <> ''
 
 union all
@@ -67,9 +67,9 @@ select from mara as A inner join I_MaterialStockTimeSeries(P_StartDate: $paramet
                                                            P_EndDate : $parameters.p_enddate,
                                                            P_PeriodType :$parameters.p_periodtype) as B on A.matnr = B.Material
                       inner join marc as c on B.Material = c.matnr and B.Plant = c.werks
-                      left outer join mbew as d on B.Material = d.matnr and B.Plant = d.bwkey
-                      association [1]   to t024 as t024  on $projection.ekgrp = t024.ekgrp
-                      association [1]   to t024d as t024d  on $projection.werks = t024d.werks and $projection.dispo = t024d.dispo
+                      left outer join mbew as d on B.Material = d.matnr and B.Plant = d.bwkey 
+                      association [1]   to t024 as t024  on $projection.ekgrp = t024.ekgrp     
+                      association [1]   to t024d as t024d  on $projection.werks = t024d.werks and $projection.dispo = t024d.dispo      
 {
   key B.CompanyCode as BUKRS,
   key B._CompanyCode.CompanyCodeName,
@@ -87,8 +87,8 @@ select from mara as A inner join I_MaterialStockTimeSeries(P_StartDate: $paramet
   key B.Customer,
   key B.InventoryStockType as stocktype,
   key B.InventorySpecialStockType,
-  key B.FiscalYearVariant,
-  @Semantics.unitOfMeasure
+  key B.FiscalYearVariant,   
+  @Semantics.unitOfMeasure  
   key B.MaterialBaseUnit as MEINS,
   @Semantics.quantity.unitOfMeasure: 'MEINS'
       cast( B.MatlWrhsStkQtyInMatlBaseUnit as abap.quan( 13, 3 ))  as stockqty,
@@ -107,5 +107,5 @@ select from mara as A inner join I_MaterialStockTimeSeries(P_StartDate: $paramet
       t024.eknam,
       c.dispo,
       t024d.dsnam,
-      A.matkl
+      A.matkl        
 } where c.bwtty = ''

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZE_TRANSCHECK</ROLLNAME>
+    <DDLANGUAGE>3</DDLANGUAGE>
+    <DOMNAME>XFIELD</DOMNAME>
+    <HEADLEN>55</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>배차대상여부</DDTEXT>
+    <REPTEXT>배차대상여부</REPTEXT>
+    <SCRTEXT_S>배차대상여부</SCRTEXT_S>
+    <SCRTEXT_M>배차대상여부</SCRTEXT_M>
+    <SCRTEXT_L>배차대상여부</SCRTEXT_L>
+    <DTELMASTER>3</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>Vehicle Arrangement Flag</DDTEXT>
+     <REPTEXT>Vehicle Arrangement Flag</REPTEXT>
+     <SCRTEXT_S>VehiArgnFL</SCRTEXT_S>
+     <SCRTEXT_M>Vehicle Arrange Flag</SCRTEXT_M>
+     <SCRTEXT_L>Vehicle Arrangement Flag</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

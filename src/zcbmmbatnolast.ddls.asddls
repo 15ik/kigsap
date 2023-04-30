@@ -14,4 +14,3 @@ select from ZCBMMBATCHECK
      
 } where LEN = 10 and TYPECHECK = '000000000000000000000000000'
   group by matnr
-

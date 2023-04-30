@@ -41,4 +41,3 @@ select from mch1
       CONCAT(cast( INSTR(charg, 'Y' ) as abap.char( 11)) ,  cast(INSTR(charg, 'Z' ) as abap.char(11)))))))))))))))))))))))))))) as TYPECHECK                                                 
       
 } 
-

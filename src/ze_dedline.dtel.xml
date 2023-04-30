@@ -15,7 +15,9 @@
     <SCRTEXT_S>선적기한</SCRTEXT_S>
     <SCRTEXT_M>선적기한</SCRTEXT_M>
     <SCRTEXT_L>선적기한</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>3</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

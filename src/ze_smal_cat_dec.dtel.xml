@@ -15,7 +15,9 @@
     <SCRTEXT_S>소분류 내역</SCRTEXT_S>
     <SCRTEXT_M>소분류 내역</SCRTEXT_M>
     <SCRTEXT_L>소분류 내역</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>3</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

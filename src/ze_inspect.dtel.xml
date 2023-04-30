@@ -15,7 +15,9 @@
     <SCRTEXT_S>검사여부</SCRTEXT_S>
     <SCRTEXT_M>검사여부</SCRTEXT_M>
     <SCRTEXT_L>검사여부</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>3</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

@@ -15,7 +15,9 @@
     <SCRTEXT_S>타시스템 전송</SCRTEXT_S>
     <SCRTEXT_M>타시스템 전송</SCRTEXT_M>
     <SCRTEXT_L>타시스템 전송</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>3</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

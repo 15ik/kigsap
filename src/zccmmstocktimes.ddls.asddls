@@ -10,7 +10,7 @@ with parameters
  p_startdate : vdm_v_start_date,
  p_enddate : vdm_v_end_date,
  p_periodtype : nsdm_period_type
-as select from ZCBMMDAYSTOCK (p_startdate: $parameters.p_startdate,
+as select from ZCBMMDAYSTOCK1 (p_startdate: $parameters.p_startdate,
                                          p_enddate : $parameters.p_enddate,
                                          p_periodtype :$parameters.p_periodtype) as A
                left outer join ZCCMM_BATCHFIND as B on A.matnr = B.matnr and A.Batch = B.BATCH

@@ -15,7 +15,9 @@
     <SCRTEXT_S>부가세포함여부</SCRTEXT_S>
     <SCRTEXT_M>부가세포함여부</SCRTEXT_M>
     <SCRTEXT_L>부가세포함여부</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>3</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

@@ -15,7 +15,9 @@
     <SCRTEXT_S>Dltd Flg</SCRTEXT_S>
     <SCRTEXT_M>Deleted Flag</SCRTEXT_M>
     <SCRTEXT_L>Deleted Flag</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>3</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

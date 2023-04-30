@@ -15,7 +15,9 @@
     <SCRTEXT_S>지출발의담당자</SCRTEXT_S>
     <SCRTEXT_M>지출발의담당자</SCRTEXT_M>
     <SCRTEXT_L>지출발의담당자</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>3</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

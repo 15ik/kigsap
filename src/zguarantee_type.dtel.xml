@@ -15,7 +15,9 @@
     <SCRTEXT_S>계약이행보증금 유형</SCRTEXT_S>
     <SCRTEXT_M>계약이행보증금 유형</SCRTEXT_M>
     <SCRTEXT_L>계약이행보증금 유형</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>3</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

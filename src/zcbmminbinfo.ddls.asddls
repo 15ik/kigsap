@@ -3,7 +3,8 @@
 @AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: '납품 문서 정보 상태 관리'
-define view ZCBMMINBINFO as select from ztmm40300 as A inner join zttm01010 as I on A.bukrs = I.bukrs and A.zwerks = I.werks and A.zlgort = I.lgort                         
+define view ZCBMMINBINFO as select from ztmm40300 as A 
+//inner join zttm01010 as I on A.bukrs = I.bukrs and A.zwerks = I.werks and A.zlgort = I.lgort                         
                          association [1]   to lfa1 as B  on $projection.lifnr = B.lifnr
                          association [1]   to t001w as C  on $projection.werks = C.werks
                          association [1]   to t001w as D  on $projection.zwerks = D.werks
@@ -55,4 +56,6 @@ define view ZCBMMINBINFO as select from ztmm40300 as A inner join zttm01010 as I
   A.aezet,
   A.aenam
       
-}  where ( I.zwms = 'X' or I.z3plt = 'X' ) and A.zlifnr = ''
+}  
+where A.zlifnr = ''
+//and ( I.zwms = 'X' or I.z3plt = 'X' ) and 

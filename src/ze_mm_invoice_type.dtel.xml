@@ -15,7 +15,9 @@
     <SCRTEXT_S>Invoice Ty</SCRTEXT_S>
     <SCRTEXT_M>Invoice Type</SCRTEXT_M>
     <SCRTEXT_L>Invoice Type</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>3</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

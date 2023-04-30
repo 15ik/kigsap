@@ -15,7 +15,9 @@
     <SCRTEXT_S>선투입사유</SCRTEXT_S>
     <SCRTEXT_M>선투입사유</SCRTEXT_M>
     <SCRTEXT_L>선투입사유</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>3</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

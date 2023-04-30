@@ -290,37 +290,37 @@ ENDFORM.
 *&---------------------------------------------------------------------*
 FORM CHECK_AUTHORITY .
 
-  CALL FUNCTION 'ZFMM_AUTH_CHECK'
-    EXPORTING
-      IV_USER = SY-UNAME.
-*     IV_OBJECT                   = 'ZMM_COMMON'
-*     IV_BUKRS                    =
-*     IV_EKORG                    =
-*     IV_LGORT                    =
-*     IV_WERKS                    =
-*     IV_ZEXSPA                   =
-*     IV_ZPODEP                   =
-*     IV_ZPRDEP                   =
-* TABLES
-*     IT_BUKRS                    =
-*     IT_EKORG                    =
-*     IT_LGORT                    =
-*     IT_WERKS                    =
-*     IT_ZEXSPA                   =
-*     IT_ZPODEP                   =
-*     IT_ZPRDEP                   =
-* EXCEPTIONS
-*     NO_ID_DATA_FOUND            = 1
-*     AUTHORIZATION_FAILURE       = 2
-*     NO_INPUT_AUTH_VALUE         = 3
-*     NO_DATA_FOUND               = 4
-*     MANDATORYFIELDISMISS        = 5
-*     OTHERS  = 6
-  IF SY-SUBRC <> 0.
-    MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO
-            WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4 DISPLAY LIKE 'E'.
-    LEAVE LIST-PROCESSING.
-  ENDIF.
+*  CALL FUNCTION 'ZFMM_AUTH_CHECK'
+*    EXPORTING
+*      IV_USER = SY-UNAME.
+**     IV_OBJECT                   = 'ZMM_COMMON'
+**     IV_BUKRS                    =
+**     IV_EKORG                    =
+**     IV_LGORT                    =
+**     IV_WERKS                    =
+**     IV_ZEXSPA                   =
+**     IV_ZPODEP                   =
+**     IV_ZPRDEP                   =
+** TABLES
+**     IT_BUKRS                    =
+**     IT_EKORG                    =
+**     IT_LGORT                    =
+**     IT_WERKS                    =
+**     IT_ZEXSPA                   =
+**     IT_ZPODEP                   =
+**     IT_ZPRDEP                   =
+** EXCEPTIONS
+**     NO_ID_DATA_FOUND            = 1
+**     AUTHORIZATION_FAILURE       = 2
+**     NO_INPUT_AUTH_VALUE         = 3
+**     NO_DATA_FOUND               = 4
+**     MANDATORYFIELDISMISS        = 5
+**     OTHERS  = 6
+*  IF SY-SUBRC <> 0.
+*    MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO
+*            WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4 DISPLAY LIKE 'E'.
+*    LEAVE LIST-PROCESSING.
+*  ENDIF.
 
 
 ENDFORM.
@@ -1003,29 +1003,22 @@ FORM PROCESSING_DATA_BATCH .
     LV_ZSEQ = GC_00000000.
   ENDIF.
 
-* U1 START : 공통 코드 조회. T1, T2 코드마스터 분기
-  ZCL_MMG_COMMON=>COMMON_G_CONFIG_OLDNEW(
-     EXPORTING IV_BUKRS  = P_BUKRS
-               IS_COMMON = VALUE #( M = 'D1' D = 'D1100' S = 'D1103' )
-     IMPORTING ET_OUTTAB = DATA(LT_COMMON) ).
-* U1 END
 
 * 20221024 START : 당도(SUGARRATIO) 속성 추가
   LT_BATCH[] = GT_BATCH[].
-  SORT LT_BATCH BY MATNR LIFNR HSDAT LICHA VFDAT SUGARRATIO.
-  DELETE ADJACENT DUPLICATES FROM LT_BATCH COMPARING MATNR LIFNR HSDAT LICHA VFDAT SUGARRATIO.
+  SORT LT_BATCH BY MATNR LIFNR HSDAT LICHA VFDAT.
+  DELETE ADJACENT DUPLICATES FROM LT_BATCH COMPARING MATNR LIFNR HSDAT LICHA VFDAT.
 
   IF LT_BATCH[] IS NOT INITIAL.
     "동일 배치 조회(구매배치)
-    SELECT FROM ZSVCMMG_BATFIND "ZSVCMM_BATFIND
-      FIELDS MATNR, BATCH, LIFNR, LWEDT, HSDAT, LICHN, VFDAT, ZMAKER, SUGARRATIO
+    SELECT FROM ZSVCMM_BATFIND "ZSVCMM_BATFIND
+      FIELDS MATNR, BATCH, LIFNR, LWEDT, HSDAT, LICHN, VFDAT, ZMAKER
       FOR ALL ENTRIES IN @LT_BATCH
       WHERE MATNR      = @LT_BATCH-MATNR
         AND LIFNR      = @LT_BATCH-LIFNR
         AND HSDAT      = @LT_BATCH-HSDAT
         AND LICHN      = @LT_BATCH-LICHA
         AND VFDAT      = @LT_BATCH-VFDAT
-        AND SUGARRATIO = @LT_BATCH-SUGARRATIO
       INTO TABLE @DATA(LT_CHARG).
 
     FREE LT_BATCH.
@@ -1089,7 +1082,7 @@ FORM PROCESSING_DATA_BATCH .
       CONTINUE.
     ELSE.
       <LS_BATCH>-CLASS = LS_CLASS-CLASS.
-      READ TABLE LT_COMMON INTO DATA(LS_COMMON) WITH KEY FIELD1 = <LS_BATCH>-CLASS.
+
       IF SY-SUBRC = 0.
         IF <LS_BATCH>-CLASS = GC_ZPP_KGC1  AND <LS_BATCH>-EX_CHARG IS NOT INITIAL.
           <LS_BATCH>-ZCHECK = ''.
@@ -1105,8 +1098,7 @@ FORM PROCESSING_DATA_BATCH .
                                                              HSDAT      = <LS_BATCH>-HSDAT
                                                              VFDAT      = <LS_BATCH>-VFDAT
                                                              LICHN      = <LS_BATCH>-LICHA
-                                                             ZMAKER     = <LS_BATCH>-ZMM_MAKER
-                                                             SUGARRATIO = <LS_BATCH>-SUGARRATIO. "20221024(+)
+                                                             ZMAKER     = <LS_BATCH>-ZMM_MAKER.
             IF SY-SUBRC = 0.
               <LS_BATCH>-CHARG = LS_CHARG-BATCH.
               <LS_BATCH>-STATUS = ICON_LED_YELLOW.
@@ -4966,19 +4958,6 @@ FORM APPEND_BATCH_ATTRIBUTE  TABLES   IT_CLASSVALUATIONSCHAR STRUCTURE BAPI3060_
     CLEAR : LS_CLASSVALUATIONSCHAR.
 
   ENDIF.
-
-* 20221024 START : SUGARRATIO 구성 로직 추가
-  IF IS_DATA-SUGARRATIO IS NOT INITIAL AND IS_DATA-CLASS = GC_ZPP_KGC1 AND IS_DATA-ZCHECK = ''.
-    LS_CLASSVALUATIONSCHAR-CLASS_TYPE  = '023'.
-    LS_CLASSVALUATIONSCHAR-OBJECTKEY   = IS_DATA-MATNR && IV_NEW_CHARG.
-    LS_CLASSVALUATIONSCHAR-OBJECTTABLE = GC_MARA.
-    LS_CLASSVALUATIONSCHAR-CHARACT     = LC_ZSUGAR_CONTENT1.
-    LS_CLASSVALUATIONSCHAR-VALUE_CHAR  = IS_DATA-SUGARRATIO.
-
-    APPEND LS_CLASSVALUATIONSCHAR TO IT_CLASSVALUATIONSCHAR.
-    CLEAR : LS_CLASSVALUATIONSCHAR.
-  ENDIF.
-* 20221024 END
 
 ENDFORM.
 *&---------------------------------------------------------------------*

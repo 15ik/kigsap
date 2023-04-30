@@ -8,6 +8,7 @@
     <TABCLASS>APPEND</TABCLASS>
     <SQLTAB>EKKO</SQLTAB>
     <DDTEXT>Additional fields for Service Contract(PO Header)</DDTEXT>
+    <ACTFLAG>U</ACTFLAG>
    </DD02V>
    <DD03P_TABLE>
     <DD03P>

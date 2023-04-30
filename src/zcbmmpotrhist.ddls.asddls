@@ -12,7 +12,7 @@ select from cdhdr as A
                on A.objectclas = B.objectclas and A.objectid = B.objectid and A.changenr = B.changenr 
         inner join ekko as D on B.objectid = D.ebeln
         inner join ekpo as E on D.ebeln = E.ebeln
-        inner join zttm01010 as i on E.werks = i.werks and E.lgort = i.lgort
+//        inner join zttm01010 as i on E.werks = i.werks and E.lgort = i.lgort
 //        left outer join ztmm40304 as F on A.objectid = F.ebeln 
         association [1]   to t001 as G  on $projection.bukrs = G.bukrs 
         association [1]   to lfa1 as H  on $projection.lifnr = H.lifnr         
@@ -40,12 +40,12 @@ select from cdhdr as A
 //    F.erdat,
 //    F.erzet,
 //    F.ernam,
-    case when E.lblkz <> '' then ''
-    else
-       case when  i.zwms is null or i.zwms = '' then 
-         case when i.z3plt is null or i.z3plt = '' then '' else i.z3plt end   
-       else i.zwms end 
-   end as ZWMS,
+//    case when E.lblkz <> '' then ''
+//    else
+//       case when  i.zwms is null or i.zwms = '' then 
+//         case when i.z3plt is null or i.z3plt = '' then '' else i.z3plt end   
+//       else i.zwms end 
+//   end as ZWMS,
    E.bstae,
    E.knttp    
 }
@@ -65,7 +65,7 @@ select from cdhdr as A
                on A.objectclas = B.objectclas and A.objectid = B.objectid and A.changenr = B.changenr 
         inner join ekko as D on B.objectid = D.ebeln
         inner join ekpo as E on D.ebeln = E.ebeln       
-        inner join zttm01010 as i on E.werks = i.werks and E.lgort = i.lgort         
+//        inner join zttm01010 as i on E.werks = i.werks and E.lgort = i.lgort         
 //        left outer join ztmm40304 as F on A.objectid = F.ebeln 
         association [1]   to t001 as G  on $projection.bukrs = G.bukrs 
         association [1]   to lfa1 as H  on $projection.lifnr = H.lifnr           
@@ -93,12 +93,12 @@ select from cdhdr as A
 //    F.erdat,
 //    F.erzet,
 //    F.ernam,
-    case when E.lblkz <> '' then ''
-    else
-       case when  i.zwms is null or i.zwms = '' then 
-         case when i.z3plt is null or i.z3plt = '' then '' else i.z3plt end   
-       else i.zwms end 
-   end as ZWMS,
+//    case when E.lblkz <> '' then ''
+//    else
+//       case when  i.zwms is null or i.zwms = '' then 
+//         case when i.z3plt is null or i.z3plt = '' then '' else i.z3plt end   
+//       else i.zwms end 
+//   end as ZWMS,
    E.bstae,
    E.knttp        
 }

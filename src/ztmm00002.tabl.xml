@@ -9,6 +9,7 @@
     <CLIDEP>X</CLIDEP>
     <LANGDEP>X</LANGDEP>
     <DDTEXT>MM 공통 코드 및 Config 관리 테이블</DDTEXT>
+    <ACTFLAG>U</ACTFLAG>
     <MAINFLAG>X</MAINFLAG>
     <CONTFLAG>A</CONTFLAG>
    </DD02V>

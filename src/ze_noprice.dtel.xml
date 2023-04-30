@@ -15,7 +15,9 @@
     <SCRTEXT_S>미단가계약</SCRTEXT_S>
     <SCRTEXT_M>미단가계약</SCRTEXT_M>
     <SCRTEXT_L>미단가계약</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>3</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

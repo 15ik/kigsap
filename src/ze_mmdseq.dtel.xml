@@ -15,7 +15,9 @@
     <SCRTEXT_S>Daily Seq.</SCRTEXT_S>
     <SCRTEXT_M>Daily Sequence</SCRTEXT_M>
     <SCRTEXT_L>Daily Sequence</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>3</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

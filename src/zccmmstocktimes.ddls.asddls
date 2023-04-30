@@ -4,7 +4,7 @@
 @AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: '[재고관리]기간 유형 별 재고 조회(CC)'
 define view ZCCMMSTOCKTIMES
-with parameters
+with parameters 
 @Consumption.hidden: true
 @Environment.systemField: #SYSTEM_DATE
  p_startdate : vdm_v_start_date,
@@ -32,13 +32,13 @@ as select from ZCBMMDAYSTOCK (p_startdate: $parameters.p_startdate,
   key A.zdate,
   case when A.stocktype = '02' then '품질검사중재고'
        when A.stocktype = '07' then '보류재고'
-       else '가용재고'
+       else '가용재고'        
        end as TYPENAME,
   case when A.stocktype = '02' then '02'
        when A.stocktype = '07' then '03'
-       else '01'
-       end as TYPECODE,
-
+       else '01'       
+       end as TYPECODE,       
+  
   A.stockqty,
   A.MEINS,
   case when B.LICHN is null then '' else B.LICHN end as LICHN,
@@ -48,5 +48,6 @@ as select from ZCBMMDAYSTOCK (p_startdate: $parameters.p_startdate,
   A.eknam,
   A.dispo,
   A.dsnam,
-  A.matkl
+  A.matkl,
+  A.bklas // KTGA-2338- 평가클래스 추가-2023.03.07
 } where stockqty > 0 and stocktype <> '03'

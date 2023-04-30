@@ -4,6 +4,8 @@
   <asx:values>
    <DDLS>
     <DDLNAME>ZCCMMSTOCKTIMES</DDLNAME>
+    <DDLANGUAGE>3</DDLANGUAGE>
+    <DDTEXT>[재고관리]기간 유형 별 재고 조회(CC)</DDTEXT>
     <SOURCE_TYPE>V</SOURCE_TYPE>
    </DDLS>
   </asx:values>

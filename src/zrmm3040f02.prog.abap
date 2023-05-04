@@ -751,64 +751,65 @@ ENDFORM.
 *&---------------------------------------------------------------------*
 FORM popup_zpri_history.
 
-  DATA: lt_mat TYPE TABLE OF ty_zpri_hist.
-
-  CLEAR: gt_rows, gt_zpri_hist.
-
-  CALL METHOD grf_grid->get_selected_rows
-    IMPORTING
-      et_index_rows = gt_rows.
-  DELETE gt_rows WHERE rowtype IS NOT INITIAL.
-
-  IF gt_rows IS INITIAL.
-    MESSAGE i006 DISPLAY LIKE 'E'.  "선택된 데이타가 없습니다.
-    EXIT.
-  ENDIF.
-
-*-----------------------------
-* 검색대상 자재 추출
-*-----------------------------
-  LOOP AT gt_rows INTO DATA(ls_rows).
-
-    READ TABLE gt_disp INTO DATA(ls_disp) INDEX ls_rows-index.
-
-    IF sy-subrc EQ 0 AND ls_disp-matnr IS NOT INITIAL.
-      lt_mat = VALUE #( BASE lt_mat ( matnr = ls_disp-matnr ) ).
-    ENDIF.
-
-  ENDLOOP.
-
-  SORT lt_mat BY matnr.
-  DELETE ADJACENT DUPLICATES FROM lt_mat COMPARING matnr.
+*  DATA: lt_mat TYPE TABLE OF ty_zpri_hist.
+*
+*  CLEAR: gt_rows.
+**  gt_zpri_hist.
+*
+*  CALL METHOD grf_grid->get_selected_rows
+*    IMPORTING
+*      et_index_rows = gt_rows.
+*  DELETE gt_rows WHERE rowtype IS NOT INITIAL.
+*
+*  IF gt_rows IS INITIAL.
+*    MESSAGE i006 DISPLAY LIKE 'E'.  "선택된 데이타가 없습니다.
+*    EXIT.
+*  ENDIF.
+*
+**-----------------------------
+** 검색대상 자재 추출
+**-----------------------------
+*  LOOP AT gt_rows INTO DATA(ls_rows).
+*
+*    READ TABLE gt_disp INTO DATA(ls_disp) INDEX ls_rows-index.
+*
+*    IF sy-subrc EQ 0 AND ls_disp-matnr IS NOT INITIAL.
+*      lt_mat = VALUE #( BASE lt_mat ( matnr = ls_disp-matnr ) ).
+*    ENDIF.
+*
+*  ENDLOOP.
+*
+*  SORT lt_mat BY matnr.
+*  DELETE ADJACENT DUPLICATES FROM lt_mat COMPARING matnr.
 
 *-----------------------------
 * 인쇄교체비 이력 검색
 *-----------------------------
-  IF lt_mat IS NOT INITIAL.
+*  IF lt_mat IS NOT INITIAL.
+*
+*    SELECT matnr,                 "자재
+*           datab,                 "유효 시작일
+*           datbi,                 "유효 종료일
+*           kbetr,                 "금액
+*           kpein,                 "가격단위
+*           currency AS waers      "통화
+*      FROM zsvcmm_a445_c
+*       FOR ALL ENTRIES IN @lt_mat
+*     WHERE matnr = @lt_mat-matnr
+*      INTO CORRESPONDING FIELDS OF TABLE @gt_zpri_hist.
+*
+*    SORT gt_zpri_hist BY matnr datab.
+*
+*    FREE lt_mat.
+*
+*  ENDIF.
 
-    SELECT matnr,                 "자재
-           datab,                 "유효 시작일
-           datbi,                 "유효 종료일
-           kbetr,                 "금액
-           kpein,                 "가격단위
-           currency AS waers      "통화
-      FROM zsvcmm_a445_c
-       FOR ALL ENTRIES IN @lt_mat
-     WHERE matnr = @lt_mat-matnr
-      INTO CORRESPONDING FIELDS OF TABLE @gt_zpri_hist.
+*  IF gt_zpri_hist IS INITIAL.
+*    MESSAGE s033 WITH TEXT-m02 DISPLAY LIKE 'E'.  "인쇄교체비 이력이 존재하지 않습니다.
+*    EXIT.
+*  ENDIF.
 
-    SORT gt_zpri_hist BY matnr datab.
-
-    FREE lt_mat.
-
-  ENDIF.
-
-  IF gt_zpri_hist IS INITIAL.
-    MESSAGE s033 WITH TEXT-m02 DISPLAY LIKE 'E'.  "인쇄교체비 이력이 존재하지 않습니다.
-    EXIT.
-  ENDIF.
-
-  CALL SCREEN '0300' STARTING AT 01 01.
+*  CALL SCREEN '0300' STARTING AT 01 01.
 
 ENDFORM.
 *&---------------------------------------------------------------------*
@@ -846,7 +847,7 @@ FORM set_grid_zpri.
 *--------------------------------
 * Dislay Grid..
 *--------------------------------
-  grf_grid_zpri->set_grid( CHANGING ct_data = gt_zpri_hist ).
+*  grf_grid_zpri->set_grid( CHANGING ct_data = gt_zpri_hist ).
 
 ENDFORM.
 *&---------------------------------------------------------------------*

@@ -6,7 +6,8 @@
 *       인터널 테이블은 Header Line Table 금지
 *----------------------------------------------------------------------*
 
-TABLES: zsvbmminfoprice, ztmm30110.
+TABLES: zsvbmminfoprice.
+*  ztmm30110.
 
 *----------------------------------------------------------------------*
 * Local Class Define..
@@ -68,7 +69,7 @@ TYPES: BEGIN OF ty_data,
          urzla                  TYPE eina-urzla,                                      "원산지
          uebto                  TYPE eine-uebto,                                      "초과납품허용
          verid                  TYPE eine-verid,                                      "생산버젼
-         kbetr                  TYPE zsvcmm_a445_c-kbetr,                             "인쇄교체비(KSCHL = 'ZPRI')
+*         kbetr                  TYPE zsvcmm_a445_c-kbetr,                             "인쇄교체비(KSCHL = 'ZPRI')
          valid                  TYPE zsvbmminfoprice-validprice,
          netpr                  TYPE zsvbmminfoprice-conditionratevalue,              "단가
          waers                  TYPE zsvbmminfoprice-conditionratevalueunit,          "통화
@@ -76,13 +77,13 @@ TYPES: BEGIN OF ty_data,
          kmein                  TYPE zsvbmminfoprice-conditionquantityunit,        "발주단위
          datab                  TYPE zsvbmminfoprice-conditionvaliditystartdate,      "시작일
          datbi                  TYPE zsvbmminfoprice-conditionvalidityenddate,        "종료일
-         cntr_no                TYPE ztmm30113-cntr_no,
-         cntr_rev               TYPE ztmm30113-cntr_rev,
-         zorder_person          TYPE ztmm30110-zorder_person,                         "계약담당자
-         zorder_person_name     TYPE zsvmm_user_info-employ_name,
-         zorder_department      TYPE ztmm30110-zorder_department,                     "계약부서
-         zorder_department_name TYPE zsvmm_user_info-depart_name,
-         title                  TYPE ztmm30110-/bofu/bcsd_subj,
+*         cntr_no                TYPE ztmm30113-cntr_no,
+*         cntr_rev               TYPE ztmm30113-cntr_rev,
+*         zorder_person          TYPE ztmm30110-zorder_person,                         "계약담당자
+*         zorder_person_name     TYPE zsvmm_user_info-employ_name,
+*         zorder_department      TYPE ztmm30110-zorder_department,                     "계약부서
+*         zorder_department_name TYPE zsvmm_user_info-depart_name,
+*         title                  TYPE ztmm30110-/bofu/bcsd_subj,
        END OF ty_data.
 
 "*- Alv Dispaly
@@ -101,20 +102,20 @@ TYPES: BEGIN OF ty_atta,
        END OF ty_atta.
 
 * 구매정보레코드 I/F 수신 결과
-TYPES: BEGIN OF ty_ifmax,
-         cntr_no                TYPE ztmm30113-cntr_no,
-         cntr_rev               TYPE ztmm30113-cntr_rev,
-         cntr_item_lno          TYPE ztmm30113-cntr_item_lno,
-         infnr                  TYPE ztmm30113-infnr,
-         timestamp              TYPE ztmm30113-timestamp,
-         times                  TYPE n LENGTH 15,
-         zorder_person          TYPE ztmm30110-zorder_person,                  "계약담당자
-         zorder_person_name     TYPE zsvmm_user_info-employ_name,
-         zorder_department      TYPE ztmm30110-zorder_department,              "계약부서
-         zorder_department_name TYPE zsvmm_user_info-depart_name,
-         bedat                  TYPE ztmm30110-bedat,
-         title                  TYPE ztmm30110-/bofu/bcsd_subj,
-       END OF ty_ifmax.
+*TYPES: BEGIN OF ty_ifmax,
+*         cntr_no                TYPE ztmm30113-cntr_no,
+*         cntr_rev               TYPE ztmm30113-cntr_rev,
+*         cntr_item_lno          TYPE ztmm30113-cntr_item_lno,
+*         infnr                  TYPE ztmm30113-infnr,
+*         timestamp              TYPE ztmm30113-timestamp,
+*         times                  TYPE n LENGTH 15,
+*         zorder_person          TYPE ztmm30110-zorder_person,                  "계약담당자
+*         zorder_person_name     TYPE zsvmm_user_info-employ_name,
+*         zorder_department      TYPE ztmm30110-zorder_department,              "계약부서
+*         zorder_department_name TYPE zsvmm_user_info-depart_name,
+*         bedat                  TYPE ztmm30110-bedat,
+*         title                  TYPE ztmm30110-/bofu/bcsd_subj,
+*       END OF ty_ifmax.
 
 * 단가 이력 조회
 TYPES: BEGIN OF ty_cond_hist,
@@ -135,14 +136,14 @@ TYPES: BEGIN OF ty_cond_hist,
        END OF ty_cond_hist.
 
 * 인쇄교체비 이력 조회
-TYPES: BEGIN OF ty_zpri_hist,
-         matnr TYPE zsvcmm_a445_c-matnr,        "자재
-         datab TYPE zsvcmm_a445_c-datab,        "유효 시작일
-         datbi TYPE zsvcmm_a445_c-datbi,        "유효 종료일
-         kbetr TYPE zsvcmm_a445_c-kbetr,        "금액
-         kpein TYPE zsvcmm_a445_c-kpein,        "가격단위
-         waers TYPE zsvcmm_a445_c-currency,     "통화
-       END OF ty_zpri_hist.
+*TYPES: BEGIN OF ty_zpri_hist,
+*         matnr TYPE zsvcmm_a445_c-matnr,        "자재
+*         datab TYPE zsvcmm_a445_c-datab,        "유효 시작일
+*         datbi TYPE zsvcmm_a445_c-datbi,        "유효 종료일
+*         kbetr TYPE zsvcmm_a445_c-kbetr,        "금액
+*         kpein TYPE zsvcmm_a445_c-kpein,        "가격단위
+*         waers TYPE zsvcmm_a445_c-currency,     "통화
+*       END OF ty_zpri_hist.
 
 *----------------------------------------------------------------------*
 * Class
@@ -174,20 +175,20 @@ DATA: gt_disp TYPE TABLE OF ty_disp,
 
 DATA: gv_land1 TYPE t001-land1.
 
-DATA: gt_ifmax TYPE TABLE OF ty_ifmax.
+*DATA: gt_ifmax TYPE TABLE OF ty_ifmax.
 
 DATA: gt_t001w  TYPE TABLE OF t001w,
       gt_t163m  TYPE TABLE OF t163m,
       gt_tmkm1t TYPE TABLE OF tmkm1t,
       gt_t007s  TYPE TABLE OF t007s,
       gt_tinct  TYPE TABLE OF tinct,
-      gt_t616t  TYPE TABLE OF t616t,
-      gt_zpri   TYPE TABLE OF zsvcmm_a445_c.
+      gt_t616t  TYPE TABLE OF t616t.
+*      gt_zpri   TYPE TABLE OF zsvcmm_a445_c.
 
 DATA: gt_cond_hist TYPE TABLE OF ty_cond_hist.
 *      GV_YEAR      TYPE T5A4A-DLYYR.            "구매단가 이력 조회 기간
 
-DATA: gt_zpri_hist TYPE TABLE OF ty_zpri_hist.
+*DATA: gt_zpri_hist TYPE TABLE OF ty_zpri_hist.
 
 DATA: ok_code    TYPE sy-ucomm,
       gv_ok_code TYPE sy-ucomm,
